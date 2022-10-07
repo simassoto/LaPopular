@@ -1,38 +1,33 @@
-import React, { useRef } from 'react'
-import Logo from '../assets/logo.png';
-import { Link } from 'react-router-dom';
-import {FaBars, FaTimes } from 'react-icons/fa';
-import '../styles/Navbar.css';
+import { useRef } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import "../styles/Navbar.css";
 
 function Navbar() {
+	const navRef = useRef();
 
-  const navRef = useRef();
-  const showNavbar = () => {
-    navRef.current.classList.remove("responsive_nav");
-  };
+	const showNavbar = () => {
+		navRef.current.classList.toggle("responsive_nav");
+	};
 
-  return (
-    <div className='navbar'>
-      <div className='leftSide'>
-        <img src={Logo} alt="" />
-      </div>
-        <div className='rightSide' ref={navRef}>
-
-          <Link to="/">Home</Link>
-          <Link to="/menu">Menu</Link>
-          <Link to="/art">Art</Link>
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
-          <button className='nav-btn nav-close-btn' onClick={showNavbar}>
-              <FaTimes/>
-          </button>
-        </div>
-        <button className='nav-btn' onClick={showNavbar}>
-          <FaBars/>
-        </button>
-    </div>
-
-  )
+	return (
+		<header>
+			<h3>LOGO</h3>
+			<nav ref={navRef}>
+				<a href="/#">Home</a>
+				<a href="/#">My work</a>
+				<a href="/#">Blog</a>
+				<a href="/#">About me</a>
+				<button
+					className="nav-btn nav-close-btn"
+					onClick={showNavbar}>
+					<FaTimes />
+				</button>
+			</nav>
+			<button className="nav-btn" onClick={showNavbar}>
+				<FaBars />
+			</button>
+		</header>
+	);
 }
 
-export default Navbar
+export default Navbar;
