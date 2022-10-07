@@ -1,5 +1,7 @@
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import Logo from "../assets/logo.png"
+import Bimba from "../assets/bimba.png"
 import "../styles/Navbar.css";
 
 function Navbar() {
@@ -11,8 +13,10 @@ function Navbar() {
 
 	return (
 		<header>
-			<h3>LOGO</h3>
+			<img src={Logo}></img>
+      <div className="righSide">
 			<nav ref={navRef}>
+        <img className="toggle" alt="" src={Bimba}></img>
 				<a href="/#">Home</a>
 				<a href="/#">My work</a>
 				<a href="/#">Blog</a>
@@ -26,6 +30,7 @@ function Navbar() {
 			<button className="nav-btn" onClick={showNavbar}>
 				<FaBars />
 			</button>
+      </div>
 		</header>
 	);
 }
