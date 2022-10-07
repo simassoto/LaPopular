@@ -1,29 +1,37 @@
-import React, { useState } from 'react'
+import React, { useRef } from 'react'
+import Logo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
-import ReorderIcon from "@material-ui/icons/Reorder"
+import {FaBars, FaTimes } from 'react-icons/fa';
 import '../styles/Navbar.css';
 
 function Navbar() {
 
-    const [openLinks,setOpenLinks] = useState(false)
+  const navRef = useRef();
+  const showNavbar = () => {
+    navRef.current.classList.remove("responsive_nav");
+  };
 
   return (
     <div className='navbar'>
-    <div className='leftSide'></div>
-      <div className='rightSide'>
-      <div className='hiddenLinks'>
-        <Link to="/">Home</Link>
-        <Link to="/menu">Menu</Link>
-        <Link to="/art">Art</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
+      <div className='leftSide'>
+        <img src={Logo} alt="" />
       </div>
+        <div className='rightSide' ref={navRef}>
 
-        <button>
-          <ReorderIcon/>
+          <Link to="/">Home</Link>
+          <Link to="/menu">Menu</Link>
+          <Link to="/art">Art</Link>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
+          <button className='nav-btn nav-close-btn' onClick={showNavbar}>
+              <FaTimes/>
+          </button>
+        </div>
+        <button className='nav-btn' onClick={showNavbar}>
+          <FaBars/>
         </button>
-      </div>
     </div>
+
   )
 }
 
