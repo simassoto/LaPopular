@@ -1,30 +1,38 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
-import ReorderIcon from "@material-ui/icons/Reorder"
-import '../styles/Navbar.css';
+import { useRef } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import Logo from "../assets/logo.png"
+import Bimba from "../assets/bimba.png"
+import "../styles/Navbar.css";
 
 function Navbar() {
+	const navRef = useRef();
 
-    const [openLinks,setOpenLinks] = useState(false)
+	const showNavbar = () => {
+		navRef.current.classList.toggle("responsive_nav");
+	};
 
-  return (
-    <div className='navbar'>
-    <div className='leftSide'></div>
-      <div className='rightSide'>
-      <div className='hiddenLinks'>
-        <Link to="/">Home</Link>
-        <Link to="/menu">Menu</Link>
-        <Link to="/art">Art</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
+	return (
+		<header>
+			<img src={Logo}></img>
+      <div className="righSide">
+			<nav ref={navRef}>
+        <img className="toggle" alt="" src={Bimba}></img>
+				<a href="/#">Home</a>
+				<a href="/#">My work</a>
+				<a href="/#">Blog</a>
+				<a href="/#">About me</a>
+				<button
+					className="nav-btn nav-close-btn"
+					onClick={showNavbar}>
+					<FaTimes />
+				</button>
+			</nav>
+			<button className="nav-btn" onClick={showNavbar}>
+				<FaBars />
+			</button>
       </div>
-
-        <button>
-          <ReorderIcon/>
-        </button>
-      </div>
-    </div>
-  )
+		</header>
+	);
 }
 
-export default Navbar
+export default Navbar;

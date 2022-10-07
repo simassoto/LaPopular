@@ -1,21 +1,104 @@
-.navbar {
-  width: 100%;
-  height: 100px;
-  background-color: #121619;
-  display: flex;
-  flex-direction: row;
+
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar .rightSide {
-  flex: 50%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+img {
+  width: 70px;
+  border-radius: 50%;
 }
 
-.navbar a {
-  color: white;
-  text-decoration: none;
-  margin: 20px;
+.toggle {
+  visibility: hidden;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+	padding: 0 2rem;
+	background-color: #121619;
+	color: white;
+}
+
+nav a {
+	margin: 0 1rem;
+	color: white;
+	text-decoration: none;
+}
+
+nav a:hover {
+	font-weight: bold;
+}
+
+header .nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: white;
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+}
+
+header div,
+nav {
+	display: flex;
+	align-items: center;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .toggle {
+    visibility: visible;
+    width: 150px;
+  }
+	header .nav-btn {
+		visibility: visible;
+		opacity: 1;
+	}
+
+  header {
+    background-color:#121619;
+
+  }
+
+	header nav {
+		position: fixed;
+    padding-top: 100px;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+    align-items: center;
+		justify-content: flex-start;
+		gap: 1.5rem;
+		background-color: #121619;
+		transition: 1s;
+		transform: translateY(-100vh);
+	}
+
+	header .responsive_nav {
+		transform: none;
+	}
+
+	nav .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+
+	nav a {
+		font-size: 1.5rem;
+	}
 }
