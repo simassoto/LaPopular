@@ -17,6 +17,8 @@ img {
 }
 
 header {
+  position: fixed;
+  width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -24,6 +26,7 @@ header {
 	padding: 0 2rem;
 	background-color: #121619;
 	color: white;
+  margin-right: 0px;
 }
 
 nav a {
@@ -55,7 +58,20 @@ nav {
   justify-content: flex-end;
 }
 
+header svg {
+  color: #226397;
+
+
+
+}
+
 @media only screen and (max-width: 1024px) {
+
+
+
+
+
+
 
   .toggle {
     visibility: visible;
@@ -64,11 +80,13 @@ nav {
 	header .nav-btn {
 		visibility: visible;
 		opacity: 1;
+    color: blue;
 	}
 
   header {
-    background-color:#121619;
-
+    background-color:transparent;
+    position: fixed;
+    width: 100%;
   }
 
 	header nav {
@@ -83,7 +101,7 @@ nav {
     align-items: center;
 		justify-content: flex-start;
 		gap: 1.5rem;
-		background-color: #121619;
+		background-color: #27689E;
 		transition: 1s;
 		transform: translateY(-100vh);
 	}
