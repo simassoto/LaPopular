@@ -1,6 +1,6 @@
 import React from 'react'
-import Mobile from "../assets/mobilePicture.jpg"
-import Desktop from "../assets/desktopImage.png"
+import Mobile from "../assets/mobilePicture.png"
+import Desktop from "../assets/desktopImage.jpg"
 import "../styles/Home.css"
 
 function Home() {
