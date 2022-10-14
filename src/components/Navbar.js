@@ -14,34 +14,35 @@ function Navbar() {
 	};
 
 	return (
-		<header>
-			  <div >
-
+	<header>
+    <div className="imageHeader">
+      <div className="logo" >
+        <img className="desktop" alt="" src={Logo}></img>
+      </div>
+      <nav ref={navRef}>
+        <img className="toggle" alt="" src={Logo}></img>
+        <a href="/#">Home</a>
+        <a href="/#">Menu</a>
+        <a href="/#">Art</a>
+        <a href="/#">Press</a>
+        <a href="/#">About Us</a>
+        <a href="/#">Contact</a>
+        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+          <FaTimes />
+        </button>
+      </nav>
+        <div className="right">
+          <button className="nav-btn" onClick={showNavbar}>
+            <FaBars />
+          </button>
+          <div className="icons">
             <InstagramIcon  style={{ height: 43, width: 26 }}
               alt=""/>  <FacebookIcon style={{ height: 43, width: 26 }}
               alt="" />
-
+          </div>
         </div>
-
-
-        <nav ref={navRef}>
-          <img className="toggle" alt="" src={Logo}></img>
-            <a href="/#">Home</a>
-            <a href="/#">Menu</a>
-            <a href="/#">Art</a>
-            <a href="/#">Press</a>
-            <a href="/#">Contact</a>
-          <button
-            className="nav-btn nav-close-btn"
-            onClick={showNavbar}>
-            <FaTimes />
-          </button>
-        </nav>
-			<button className="nav-btn" onClick={showNavbar}>
-				<FaBars />
-			</button>
-
-		</header>
+      </div>
+  </header>
 	);
 }
 

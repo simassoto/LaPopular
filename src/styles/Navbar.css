@@ -17,22 +17,29 @@ img {
 }
 
 header {
-  position: fixed;
+  position: fixed center;
   width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	height: 80px;
-	padding: 0 2rem;
-	background-color: #121619;
-	color: white;
-  margin-right: 0px;
+  background-color: #dadfe4;
 }
+
+.imageHeader {
+  display: flex;
+	align-items: center;
+	justify-content: space-between;
+  width: 55%;
+}
+
+
 
 nav a {
 	margin: 0 1rem;
-	color: white;
+	color: #226397;
 	text-decoration: none;
+
 }
 
 nav a:hover {
@@ -51,11 +58,13 @@ header .nav-btn {
 	font-size: 1.8rem;
 }
 
+
 header div,
 nav {
 	display: flex;
 	align-items: center;
   justify-content: flex-end;
+
 }
 
 header svg {
@@ -68,7 +77,19 @@ header svg {
 @media only screen and (max-width: 1024px) {
 
 
+  .logo {
+    display: none;
+  }
 
+  .icons {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+
+  .right {
+    width: 100%;
+  }
 
 
 
@@ -86,6 +107,7 @@ header svg {
   header {
     background-color:transparent;
     position: fixed;
+    justify-content: flex-end;
     width: 100%;
   }
 
@@ -114,9 +136,11 @@ header svg {
 		position: absolute;
 		top: 2rem;
 		right: 2rem;
+    color: white;
 	}
 
 	nav a {
 		font-size: 1.5rem;
+    color: white;
 	}
 }
