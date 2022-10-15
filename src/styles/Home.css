@@ -2,8 +2,8 @@
   height: 100vh;
   background-color: #dadfe4;
   background-repeat: no-repeat;
-  background-position:top center;
-  background-size: 60%;
+  background-position:center ;
+  position: cover;
 
 }
 @media only screen and (max-width: 750px) {
