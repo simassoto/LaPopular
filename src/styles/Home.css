@@ -5,8 +5,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-position: top center;
+  background-position: top ;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:85% ;
+
+
+
 
 }
