@@ -1,9 +1,15 @@
 .home {
-  height: 100vh;
+  height: 80vh;
+  width: 100%;
   background-color: #dadfe4;
   background-repeat: no-repeat;
-  background-position:center ;
-  position: cover;
+  background-position: center ;
+  position: relative;
+  background-size: cover;
+  background-position: 100% 30%;
+  margin: 0;
+
+
 
 }
 @media only screen and (max-width: 750px) {

@@ -23,21 +23,22 @@ header {
 	align-items: center;
 	justify-content: center;
 	height: 80px;
-  background-color: #dadfe4;
+  background-color: #2A80A6;
 }
 
 .imageHeader {
+  position: fixed;
   display: flex;
 	align-items: center;
 	justify-content: space-between;
-  width: 55%;
+  width: 95%;
 }
 
 
 
 nav a {
 	margin: 0 1rem;
-	color: #226397;
+	color: white;
 	text-decoration: none;
 
 }
@@ -68,7 +69,7 @@ nav {
 }
 
 header svg {
-  color: #226397;
+  color: white;
 
 
 

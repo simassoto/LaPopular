@@ -36,8 +36,8 @@ function Navbar() {
             <FaBars />
           </button>
           <div className="icons">
-            <InstagramIcon  style={{ height: 43, width: 26 }}
-              alt=""/>  <FacebookIcon style={{ height: 43, width: 26 }}
+            <InstagramIcon  style={{ height: 43, width: 26, color:"white" }}
+              alt=""/>  <FacebookIcon style={{ height: 43, width: 26, color:"white" }}
               alt="" />
           </div>
         </div>
