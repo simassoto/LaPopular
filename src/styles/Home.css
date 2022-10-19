@@ -1,6 +1,6 @@
 .home {
-  width: 100%;
   height: 100vh;
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,5 +11,22 @@
 
 
 
+=======
+  background-color: #dadfe4;
+  background-repeat: no-repeat;
+  background-position: 90% 0% ;
+  background-size: cover;
+  margin:0;
+}
+
+@media only screen and (max-width:768 px) {
+
+  .home {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+>>>>>>> cf0319b71b82818ce28cad1ffee0d04b3005a993
 
 }
