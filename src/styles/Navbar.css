@@ -7,32 +7,52 @@
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
 img {
   width: 70px;
   border-radius: 50%;
 }
 
 .toggle {
-  visibility: hidden;
+  display: none;
 }
 
+.toggleh {
+  display: none;
+}
+
+
 header {
-  position: fixed;
+  position:absolute;
+  left:0;
+  top:0;
+  right:0;
   width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	height: 80px;
-	padding: 0 2rem;
-	background-color: #121619;
-	color: white;
-  margin-right: 0px;
+  background-color: #2A80A6;
+}
+
+.imageHeader {
+  position: fixed;
+  display: flex;
+	align-items: center;
+	justify-content: space-around;
+  width: 96%;
+
+
 }
 
 nav a {
-	margin: 0 1rem;
+	margin: 0 1.5rem;
 	color: white;
 	text-decoration: none;
+  font-size: large;
+
+
 }
 
 nav a:hover {
@@ -51,41 +71,97 @@ header .nav-btn {
 	font-size: 1.8rem;
 }
 
+
 header div,
 nav {
 	display: flex;
 	align-items: center;
-  justify-content: flex-end;
+  justify-content:center;
+
+
 }
 
 header svg {
-  color: #226397;
-
-
-
+  color: white;
 }
 
 @media only screen and (max-width: 1024px) {
 
 
+  #home {
+    display: none;
+  }
+
+  img {
+   size: 20px;
+  }
 
 
+  header svg {
+    color: #215D91;
+  }
+
+  .imageHeader {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+  }
 
 
+  .logo {
+    display: none;
+  }
+
+  .right .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: blue;
+  }
+
+  .right {
+    width: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   .toggle {
-    visibility: visible;
-    width: 150px;
+   display: block;
+    width: 130px;
   }
-	header .nav-btn {
+  .toggleh {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    color: whitesmoke;
+
+  }
+
+  .toggleh .time {
+    color: #2A80A6;
+  }
+
+  .toggle p {
+    width: 230px;
+  }
+
+  header .nav-btn {
 		visibility: visible;
 		opacity: 1;
-    color: blue;
+
 	}
 
   header {
     background-color:transparent;
     position: fixed;
+    justify-content: space-between;
     width: 100%;
   }
 
@@ -114,9 +190,11 @@ header svg {
 		position: absolute;
 		top: 2rem;
 		right: 2rem;
+    color: white;
 	}
 
 	nav a {
-		font-size: 1.5rem;
+		font-size: 1rem;
+    color: white;
 	}
 }
