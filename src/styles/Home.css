@@ -1,20 +1,8 @@
 .home {
   height: 100vh;
-<<<<<<< HEAD
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-position: top ;
-  background-repeat: no-repeat;
-  background-size:85% ;
-
-
-
-=======
   background-color: #dadfe4;
   background-repeat: no-repeat;
-  background-position: 90% 0% ;
+  background-position: center top;
   background-size: cover;
   margin:0;
 }
@@ -27,6 +15,5 @@
     background-repeat: no-repeat;
     background-position: top right;
   }
->>>>>>> cf0319b71b82818ce28cad1ffee0d04b3005a993
 
 }

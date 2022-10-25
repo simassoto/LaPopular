@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Mobile from "../assets/mobilePicture.png"
-<<<<<<< HEAD
-import Desktop from "../assets/desktop.png"
-=======
 import Desktop from "../assets/desktopImage.png"
->>>>>>> cf0319b71b82818ce28cad1ffee0d04b3005a993
 import "../styles/Home.css"
 
 function Home() {

@@ -1,5 +1,6 @@
 import React from 'react'
 import MenuImage from "../assets/menuImage.webp"
+import "../styles/Menu.css";
 
 function Menu() {
   return (
