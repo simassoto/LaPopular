@@ -1,0 +1,28 @@
+
+
+.menuImage img {
+
+
+  height: 85vh;
+  width: auto;
+  border-radius: 0%;
+  opacity: 0.8;
+  margin-top: 68px;
+
+}
+
+.menuImage {
+  height: 100vh;
+  background-color: #dadfe4;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  margin:0;
+  display: flex;
+  justify-content: center;
+
+}
+
+.footer {
+  display: none;
+}

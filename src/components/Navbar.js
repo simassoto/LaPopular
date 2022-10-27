@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../assets/logo.png"
+import LaPopular from "../assets/taberna.svg"
 import Bimba from "../assets/bimba.png"
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import InstagramIcon from "@material-ui/icons/Instagram";
@@ -17,17 +18,18 @@ function Navbar() {
 	return (
 	<header>
     <div className="imageHeader">
-      <div className="logo" >
-        <img className="desktop" alt="" src={Logo}></img>
-      </div>
+
       <nav ref={navRef}>
         <img className="toggle" alt="" src={Logo}></img>
-        <a href="/#" id="home">Home </a>
+        <div className="desktop">
+        <a href="/#" id="home"> <img  alt="" src={LaPopular}></img></a>
+        </div>
+        <a href="/#" id="casa">Home</a>
         <a href="/menu">Menu</a>
         <a href="/#">Art</a>
         <a href="/#">Press</a>
-        <a href="/#">About Us</a>
-        <a href="/#">Contact</a>
+        <a href="/about">About Us</a>
+        <a href="/contact">Contact</a>
         <div className="toggleh">
           <AccessTimeIcon className="time"/>
           <p>Mon - Fri:	<strong>17h - 23h</strong> <br />
@@ -43,8 +45,13 @@ function Navbar() {
             <FaBars />
           </button>
           <div className="icons">
-            <InstagramIcon className="social"  style={{ height: 50, width: 33,  }}alt=""/>
-            <FacebookIcon className="social"  style={{ height: 50, width: 33, }} alt="" />
+          <a href="https://www.instagram.com/lapopularericeira/?hl=pt">
+          <InstagramIcon className="social"  style={{ height: 47, width: 30,  }}alt=""/>
+          </a>
+          <a href="https://m.facebook.com/profile.php?id=100063365822320">
+            <FacebookIcon className="social"  style={{ height: 47, width: 30, }} alt="" />
+          </a>
+
           </div>
         </div>
       </div>

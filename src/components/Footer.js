@@ -1,15 +1,24 @@
-import React from 'react'
+import React,  {useState} from 'react'
+import Modal from 'react-modal';
 import PlaceIcon from '@mui/icons-material/Place';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import CallIcon from '@mui/icons-material/Call';
 import "../styles/Footer.css";
 
-
+Modal.setAppElement("#root");
 
 function Footer() {
+
+  const [modalIsOpen, setIsOpen] = useState(false);
+
+  function openModal() {
+    setIsOpen(true)
+  }
+
+  function closeModal() {
+    setIsOpen(false)
+  }
   return (
-
-
     <div className='footer'>
 
       <div className='icons'>
@@ -21,9 +30,19 @@ function Footer() {
         </div>
         <div className='center'>
           <AccessTimeIcon/>
-          <p>Mon - Fri:	<strong>17h - 23h</strong> <br />
+          <button onClick={openModal}>HOURS</button>
+          <Modal
+          isOpen ={modalIsOpen}
+          onRequestClose={closeModal}
+          contentLabel="Exemple Modal"
+          overlayClassName="modal-overlay"
+          className="modal-content"
+          >
+            <p>Mon - Fri:	<strong>17h - 23h</strong> <br />
             Tue: <strong>Closed</strong> <br />
             Sat & Sun :	<strong>11h - 23h</strong></p>
+            <button onClick={closeModal}></button>
+          </Modal>
         </div>
         <div className='rightSide'>
           <CallIcon/>

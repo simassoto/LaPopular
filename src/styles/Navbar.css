@@ -1,5 +1,4 @@
 
-
 * {
 	padding: 0;
 	margin: 0;
@@ -7,21 +6,23 @@
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
 img {
-  width: 70px;
-  border-radius: 50%;
+  width: 100px;
+
+
+}
+
+#casa {
+  display: none;
 }
 
 .toggle {
   display: none;
 }
 
-.toggleh {
+div .toggleh {
   display: none;
 }
-
 
 header {
   position:absolute;
@@ -33,40 +34,65 @@ header {
 	align-items: center;
 	justify-content: center;
 	height: 80px;
-  background-color: #2A80A6;
+  background-color: transparent;
 }
 
 .imageHeader {
   position: fixed;
   display: flex;
 	align-items: center;
-	justify-content: space-around;
-  width: 96%;
+	justify-content:center;
+  width: 100%;
+  padding-top: 20px;
+}
+
+#home {
+  height: 36px;
+  padding-top: 5px;
+}
 
 
+
+.desktop  img{
+
+  min-width: 88px;
+  height: 25px;
 }
 
 nav a {
-	margin: 0 1.5rem;
-	color: white;
-	text-decoration: none;
-  font-size: large;
+  font-family: Roboto, Helvetica Neue, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  min-width: 88px;
+  line-height: 36px;
+  padding: 0 16px;
 
-
+  text-align: center;
+  text-decoration: none;
+  background: rgb(40,103,157,0.3);
 }
 
+
 nav a:hover {
-	font-weight: bold;
+  background: rgba(130, 12, 12, 0.3);
+  position: relative;
+  color: #f4f4f4;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  border: none;
 }
 
 header .nav-btn {
-	padding: 5px;
+padding-left: 20px;
 	cursor: pointer;
 	background: transparent;
 	border: none;
 	outline: none;
 	color: white;
-	visibility: hidden;
+	display: none;
 	opacity: 0;
 	font-size: 1.8rem;
 }
@@ -77,15 +103,61 @@ nav {
 	display: flex;
 	align-items: center;
   justify-content:center;
+}
 
+.right {
+  display: flex;
+  justify-content: flex-start;
+  height: 36px;
+  width: 86px;
+  line-height: 26px;
+  background: rgb(40,103,157,0.3);
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.right .icons {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
 
 }
 
+
+
 header svg {
-  color: white;
+
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+}
+
+header  svg:hover {
+ color: #8E2D36;
+
 }
 
 @media only screen and (max-width: 1024px) {
+
+  .right .icons {
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-top: 0;
+    display: flex;
+    justify-content: flex-start;
+
+  }
+
+  img {
+    width: 100px;
+    border-radius: 50%;
+
+  }
+
+  #casa {
+    display: block;
+  }
+
 
 
   #home {
@@ -105,29 +177,23 @@ header svg {
     position: fixed;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
 
+
   }
 
-
-  .logo {
-    display: none;
-  }
-
-  .right .icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    color: blue;
-  }
 
   .right {
-    width: 90%;
+    width: 100%;
+    height: 80px;
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+    background: none;
+    padding: 0;
+    margin: 0;
   }
 
   .toggle {
@@ -153,13 +219,17 @@ header svg {
   }
 
   header .nav-btn {
+    padding-right: 20px;
+    padding-top: 9px;
+    position: 100%;
+    display: block;
 		visibility: visible;
 		opacity: 1;
 
 	}
 
   header {
-    background-color:transparent;
+
     position: fixed;
     justify-content: space-between;
     width: 100%;
@@ -167,7 +237,7 @@ header svg {
 
 	header nav {
 		position: fixed;
-    padding-top: 100px;
+    padding-top: 50px;
 		top: 0;
 		left: 0;
 		height: 100%;
@@ -176,25 +246,30 @@ header svg {
 		flex-direction: column;
     align-items: center;
 		justify-content: flex-start;
-		gap: 1.5rem;
-		background-color: #27689E;
+		gap: 0.8rem;
+    background-color: #74110c;
 		transition: 1s;
 		transform: translateY(-100vh);
 	}
 
 	header .responsive_nav {
 		transform: none;
+
 	}
 
 	nav .nav-close-btn {
 		position: absolute;
-		top: 2rem;
-		right: 2rem;
+		top: 0.5rem;
+		right: 0.5rem;
     color: white;
 	}
 
 	nav a {
 		font-size: 1rem;
     color: white;
+    background: none;
 	}
+
+
+
 }
