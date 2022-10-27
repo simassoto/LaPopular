@@ -6,20 +6,29 @@
   align-items: center;
   flex-direction: row;
   background-color:#640f0b ;
+
+
+}
+
+.vl {
+  border-left: 1px solid rgb(239, 243, 239);
+  height: 500px;
+
 }
 
 .about img {
-
-  height: 65vh;
+  padding-right: 12px;
+  height: 50vh;
   width: auto;
   border-radius: 0%;
-  padding-top: 70px;
+
 
 }
 
 p {
   font-size: medium;
-  width: 50vh;
+  height: 50vh;
+  width: 80vh;
   border-radius: 0%;
   padding-top: 30px;
   color: white;

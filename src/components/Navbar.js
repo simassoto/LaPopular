@@ -29,7 +29,7 @@ function Navbar() {
         <a href="/#">Art</a>
         <a href="/#">Press</a>
         <a href="/about">About Us</a>
-        <a href="/#">Contact</a>
+        <a href="/contact">Contact</a>
         <div className="toggleh">
           <AccessTimeIcon className="time"/>
           <p>Mon - Fri:	<strong>17h - 23h</strong> <br />
