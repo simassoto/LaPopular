@@ -75,7 +75,7 @@ nav a {
 
 
 nav a:hover {
-  background: rgba(130, 12, 12, 0.3);
+  background: rgba(130, 12, 12, 0.9);
   position: relative;
   color: #f4f4f4;
   box-sizing: border-box;
@@ -176,6 +176,7 @@ header  svg:hover {
   .imageHeader {
     position: fixed;
     display: flex;
+    height: 80px;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -194,6 +195,7 @@ header  svg:hover {
     background: none;
     padding: 0;
     margin: 0;
+    margin-bottom: 0px;
   }
 
   .toggle {
@@ -230,7 +232,7 @@ header  svg:hover {
 
   header {
 
-    position: fixed;
+
     justify-content: space-between;
     width: 100%;
   }
@@ -247,13 +249,14 @@ header  svg:hover {
     align-items: center;
 		justify-content: flex-start;
 		gap: 0.8rem;
-    background-color: #74110c;
+    background-color: #557a95;
 		transition: 1s;
 		transform: translateY(-100vh);
 	}
 
 	header .responsive_nav {
 		transform: none;
+
 
 	}
 
