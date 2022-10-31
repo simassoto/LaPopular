@@ -5,11 +5,16 @@ import BackImage from "../assets/menuback1.png"
 
 function Menu() {
   return (
-    <div className='menuImage' style={{ backgroundImage: `url(${BackImage}` }}>
 
-      <img src={MenuImage} alt="" />
+      <div className='menu' style={{ backgroundImage: `url(${BackImage}` }}>
 
-    </div>
+          <img src={MenuImage} alt="" />
+
+
+
+      </div>
+
+
   );
 }
 

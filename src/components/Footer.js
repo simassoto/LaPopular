@@ -24,13 +24,15 @@ function Footer() {
       <div className='icons'>
 
         <div className='leftSide'>
-          <PlaceIcon/>
+
           <a target="_blank" href='https://www.google.com/maps/dir//La+Popular.+Taberna/@38.9654121,-9.4883222,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0xd1f2714104214af:0x205e92ff98675340!2m2!1d-9.4182822!2d38.965433' rel="noreferrer">
-          LOCATION </a>
+            <button className='button'><PlaceIcon/>Directions </button></a>
         </div>
+
         <div className='center'>
-          <AccessTimeIcon/>
-          <button onClick={openModal}>HOURS</button>
+
+
+          <button className='button' onClick={openModal}><AccessTimeIcon/>Hours</button>
           <Modal
           isOpen ={modalIsOpen}
           onRequestClose={closeModal}
@@ -38,15 +40,24 @@ function Footer() {
           overlayClassName="modal-overlay"
           className="modal-content"
           >
-            <p>Mon - Fri:	<strong>17h - 23h</strong> <br />
-            Tue: <strong>Closed</strong> <br />
-            Sat & Sun :	<strong>11h - 23h</strong></p>
-            <button onClick={closeModal}></button>
+
+          <div className='container'>
+
+           <p>Monday:	<strong>17h - 23h</strong> <br />
+            Tuesday: <strong>Closed</strong> <br />
+            Wednesday:	<strong>17h - 23h</strong> <br />
+            Thurdsday:	<strong>17h - 23h</strong> <br />
+            Saturday  :	<strong>11h - 23h</strong><br/>
+            Sunday  :	<strong>11h - 23h</strong></p>
+
+          </div>
+
+            <button onClick={closeModal}>Close</button>
           </Modal>
         </div>
         <div className='rightSide'>
-          <CallIcon/>
-          <a target="_blank" href='tel:+351963205308'> CALL US</a>
+
+          <a target="_blank" href='tel:+351963205308'><button className='button'><CallIcon/>Call</button> </a>
         </div>
       </div>
 

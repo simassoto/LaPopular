@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../assets/logo.png"
-import LaPopular from "../assets/taberna.svg"
+import LaPopular from "../assets/taberna.png"
 import Bimba from "../assets/bimba.png"
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import InstagramIcon from "@material-ui/icons/Instagram";
@@ -28,7 +28,7 @@ function Navbar() {
         <a href="/menu">Menu</a>
         <a href="/#">Art</a>
         <a href="/#">Press</a>
-        <a href="/about">About Us</a>
+        <a href="/about">About </a>
         <a href="/contact">Contact</a>
         <div className="toggleh">
           <AccessTimeIcon className="time"/>
