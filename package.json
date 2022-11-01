@@ -2,7 +2,6 @@
   "name": "lapopular",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "https://simassoto.github.io/LaPopular",
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
@@ -22,8 +21,6 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -45,8 +42,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
   }
-}
+
+  }
