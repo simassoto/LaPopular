@@ -21,8 +21,6 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -37,8 +35,7 @@
   "browserslist": {
     "production": [
       ">0.2%",
-      "not dead",
-      "not op_mini all"
+      "not dead"
     ],
     "development": [
       "last 1 chrome version",
@@ -46,7 +43,6 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://simassoto.github.io/LaPopular",
   "devDependencies": {
     "gh-pages": "^4.0.0"
   }
