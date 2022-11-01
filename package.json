@@ -2,6 +2,7 @@
   "name": "lapopular",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://simassoto.github.io/LaPopular",
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
@@ -46,8 +47,9 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://simassoto.github.io/LaPopular",
+
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "reinstall-node-modules": "^2.0.0"
   }
 }
