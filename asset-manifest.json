@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/LaPopular/static/css/main.1e52c44d.css",
+    "main.css": "/LaPopular/static/css/main.a0a289e4.css",
     "main.js": "/LaPopular/static/js/main.4a6df21c.js",
     "static/js/787.2965fed9.chunk.js": "/LaPopular/static/js/787.2965fed9.chunk.js",
     "static/media/about.png": "/LaPopular/static/media/about.2e9094f742368d034c22.png",
@@ -12,12 +12,12 @@
     "static/media/mobilePicture.png": "/LaPopular/static/media/mobilePicture.5f2ced00d2e87448a17f.png",
     "static/media/taberna.png": "/LaPopular/static/media/taberna.ce7b1628cd114d3502cc.png",
     "index.html": "/LaPopular/index.html",
-    "main.1e52c44d.css.map": "/LaPopular/static/css/main.1e52c44d.css.map",
+    "main.a0a289e4.css.map": "/LaPopular/static/css/main.a0a289e4.css.map",
     "main.4a6df21c.js.map": "/LaPopular/static/js/main.4a6df21c.js.map",
     "787.2965fed9.chunk.js.map": "/LaPopular/static/js/787.2965fed9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e52c44d.css",
+    "static/css/main.a0a289e4.css",
     "static/js/main.4a6df21c.js"
   ]
 }
