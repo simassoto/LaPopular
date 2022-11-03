@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/LaPopular/static/css/main.a0a289e4.css",
-    "main.js": "/LaPopular/static/js/main.375b656e.js",
+    "main.js": "/LaPopular/static/js/main.45074d5f.js",
     "static/js/787.2965fed9.chunk.js": "/LaPopular/static/js/787.2965fed9.chunk.js",
     "static/media/about.png": "/LaPopular/static/media/about.2e9094f742368d034c22.png",
     "static/media/desktopImage.png": "/LaPopular/static/media/desktopImage.9494963c4b5ead1c5998.png",
@@ -13,11 +13,11 @@
     "static/media/taberna.png": "/LaPopular/static/media/taberna.ce7b1628cd114d3502cc.png",
     "index.html": "/LaPopular/index.html",
     "main.a0a289e4.css.map": "/LaPopular/static/css/main.a0a289e4.css.map",
-    "main.375b656e.js.map": "/LaPopular/static/js/main.375b656e.js.map",
+    "main.45074d5f.js.map": "/LaPopular/static/js/main.45074d5f.js.map",
     "787.2965fed9.chunk.js.map": "/LaPopular/static/js/787.2965fed9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a0a289e4.css",
-    "static/js/main.375b656e.js"
+    "static/js/main.45074d5f.js"
   ]
 }
