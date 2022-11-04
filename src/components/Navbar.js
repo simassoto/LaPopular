@@ -22,9 +22,9 @@ function Navbar() {
       <nav ref={navRef}>
         <img className="toggle" alt="" src={Logo}></img>
         <div className="desktop">
-        <a href="/#" id="home"> <img  alt="" src={LaPopular}></img></a>
+        <a href="/" id="home"> <img  alt="" src={LaPopular}></img></a>
         </div>
-        <a href="/#" id="casa">Home</a>
+        <a href="/" id="casa">Home</a>
         <a href="/menu">Menu</a>
         <a href="/#">Art</a>
         <a href="/#">Press</a>
