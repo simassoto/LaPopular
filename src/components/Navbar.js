@@ -25,11 +25,11 @@ function Navbar() {
         <a href="/#" id="home"> <img  alt="" src={LaPopular}></img></a>
         </div>
         <a href="/#" id="casa">Home</a>
-        <a href="/menu">Menu</a>
-        <a href="/#">Art</a>
+        <a href="/#/menu">Menu</a>
+        <a href="/">Art</a>
         <a href="/#">Press</a>
-        <a href="/about">About </a>
-        <a href="/contact">Contact</a>
+        <a href="/#/about">About </a>
+        <a href="/#/contact">Contact</a>
         <div className="toggleh">
           <AccessTimeIcon className="time"/>
           <p>Mon - Fri:	<strong>17h - 23h</strong> <br />
