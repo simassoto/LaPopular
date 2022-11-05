@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/http://simassoto.github.io/LaPopular/static/css/main.a0a289e4.css",
+    "main.js": "/http://simassoto.github.io/LaPopular/static/js/main.083d6125.js",
+    "static/js/787.2965fed9.chunk.js": "/http://simassoto.github.io/LaPopular/static/js/787.2965fed9.chunk.js",
+    "static/media/about.png": "/http://simassoto.github.io/LaPopular/static/media/about.2e9094f742368d034c22.png",
+    "static/media/desktopImage.png": "/http://simassoto.github.io/LaPopular/static/media/desktopImage.9494963c4b5ead1c5998.png",
+    "static/media/menuback1.png": "/http://simassoto.github.io/LaPopular/static/media/menuback1.0ea8f1bd664b6ac29494.png",
+    "static/media/logo.png": "/http://simassoto.github.io/LaPopular/static/media/logo.22d8009a956980da2d00.png",
+    "static/media/menuImage2.png": "/http://simassoto.github.io/LaPopular/static/media/menuImage2.24576d2b5f7b2da3928e.png",
+    "static/media/bimba.png": "/http://simassoto.github.io/LaPopular/static/media/bimba.31d3cf872f37c7a1e9ed.png",
+    "static/media/mobilePicture.png": "/http://simassoto.github.io/LaPopular/static/media/mobilePicture.5f2ced00d2e87448a17f.png",
+    "static/media/taberna.png": "/http://simassoto.github.io/LaPopular/static/media/taberna.ce7b1628cd114d3502cc.png",
+    "index.html": "/http://simassoto.github.io/LaPopular/index.html",
+    "main.a0a289e4.css.map": "/http://simassoto.github.io/LaPopular/static/css/main.a0a289e4.css.map",
+    "main.083d6125.js.map": "/http://simassoto.github.io/LaPopular/static/js/main.083d6125.js.map",
+    "787.2965fed9.chunk.js.map": "/http://simassoto.github.io/LaPopular/static/js/787.2965fed9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0a289e4.css",
+    "static/js/main.083d6125.js"
+  ]
+}
