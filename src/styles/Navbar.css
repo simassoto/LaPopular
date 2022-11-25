@@ -6,7 +6,7 @@
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-img {
+.imageHeader img {
   width: 100px;
 
 
@@ -148,9 +148,10 @@ header  svg:hover {
 
   }
 
-  img {
+  .imageHeader img {
     width: 100px;
     border-radius: 50%;
+    size: 20px;
 
   }
 
@@ -164,9 +165,6 @@ header  svg:hover {
     display: none;
   }
 
-  img {
-   size: 20px;
-  }
 
 
   header svg {
